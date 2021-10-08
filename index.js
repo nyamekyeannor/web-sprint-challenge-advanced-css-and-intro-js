@@ -219,8 +219,8 @@ console.log(artists[2].bio)
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-artists[8].name= "Vincent Van Gogh"
-console.log(artists[8].name)
+// artists[8].name= "Vincent Van Gogh"
+// console.log(artists[8].name)
 
 
 
@@ -247,9 +247,20 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*Your Code Here*/) {
-  /*Your Code Here*/
+function get20s(artists) {
+  let filteredArray=[];
+    for(let i=0; i < artists.length; i++){
+      let yearsArray = artists[i].years.split("-");
+      let born = yearsArray[0];
+      let died = yearsArray[1];
+
+      if(Number(born) >= 1900 && Number(died) <= 2000){
+        filteredArray.push(artists[i].name);
+       }
+    }
+return filteredArray;
 }
+ 
 
 
 
@@ -306,8 +317,14 @@ Use lotsOfArt to do the following:
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
-function lotsOfArt(/*Your Code Here*/) {
-  /*Your Code Here*/
+function lotsOfArt() {
+  let filteredArray =[];
+  for (let i=0; i < artists.length; i++){
+    if(artists[i].paintings > 100){
+      filteredArray.push(artists[i].name);
+    }
+  }
+  return filteredArray;
 }
 
 
