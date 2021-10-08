@@ -23,11 +23,27 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
-2. Talk about 3 different things you can do to ensure your website is accessible. 
-3. How would you explain the concept of a variable to someone new to programming?
-4. What is the purpose of using functions in code?
-5. How do you access a key inside of an object inside of an array?
 
+   This is when software or a site is user friendly for everyone to use including people with disabilities. 
+   For example visual impairment individuals. 
+
+2. Talk about 3 different things you can do to ensure your website is accessible.
+
+    One thing I can do to make sure that my website is accessible is to make sure i'm 
+    writing semantic HTML. Another think I could do is to be mindful of how I use my headings
+    like my <h1> or <h2> tags. Making sure i'm using these headings correctly will help me to 
+    be able to format my structure of my content well. I could also give my links a good and meaningful 
+    name description like classes or ID. 
+
+
+3. How would you explain the concept of a variable to someone new to programming?
+    A variable is information that can be used to store data. It can also be changed and assigned a value. 
+    
+4. What is the purpose of using functions in code?
+ Functions are really useful for us programers because it allows us to be able to break down our code in order to make it more readable. 
+
+5. How do you access a key inside of an object inside of an array?
+    array[index].key
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions

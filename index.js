@@ -208,15 +208,19 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
+console.log(artists[0].name)
 
 
 //(2) Bio of the third artist (2nd index) in the array 
+console.log(artists[2].bio)
 
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
+artists[8].name= "Vincent Van Gogh"
+console.log(artists[8].name)
 
 
 
@@ -228,8 +232,8 @@ Use getArtistByIndex to do the following:
 
 Example, if getArtistByIndex is invoked with the artists array and the number 0, it will return `the artist at index 0 is Amedeo Modigliani` */
 
-function getArtistByIndex(/*Your Code Here*/) {
-  /*Your Code Here*/
+function getArtistByIndex(artists, index) {
+  return `the artist at index ${artists[index].id} is ${artists[index].name}`;
 }
 
 
@@ -258,8 +262,9 @@ Use removeArtist to do the following:
 
 For example, if removeArtist is invoked with the artists array and the number 0, it will remove Amedeo Modigliani from our dataset and return the number 19. */
 
-function removeArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function removeArtist(artists) {
+  artists.pop();
+  return artists.length
 }
 
 
@@ -279,8 +284,17 @@ Use addArtist to do the following:
 
 Example: addArtist(artists) should return the artists array with the above object added to the end of the array. */
 
-function addArtist(/*Your Code Here*/) {
-  /*Your Code Here*/
+function addArtist(artists) {
+  artists.push(
+    `"id": 20,
+    "name": "Nyamekye Annor",
+    "years": "1993 - 2021",
+    "genre": "Web Design",
+    "nationality": "American",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, facilis ratione. Quos architecto, minus voluptas doloribus modi et voluptates unde. Sed praesentium iste impedit sapiente doloremque! Voluptatem accusantium doloribus pariatur!
+    "`
+  )
+  return artists
 }
 
 
